@@ -1,8 +1,9 @@
 # Troubleshooting a VPC
 
+![troubleshooting](./assets/diagram/vpc-troubleshooting.diagram.png)
+
 **Week:** 7
 **Module:** Networking & Security
-**Duration:** 75 minutes
 
 ---
 
