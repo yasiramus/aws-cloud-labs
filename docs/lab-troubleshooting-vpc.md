@@ -1,15 +1,10 @@
 # Troubleshooting a VPC
 
-![troubleshooting](./assets/diagram/vpc-troubleshooting.diagram.png)
+![troubleshooting](../assets/diagram/vpc-troubleshooting.diagram.png)
 
-**Week:** 7
 **Module:** Networking & Security
 
----
-
 ## 🎯 Objectives
-
-At the end of this task, I:
 
 - Create VPC Flow Logs and publish them to S3 bucket.
 - Troubleshoot VPC configuration issues such as route table, security group, NACL.
@@ -116,7 +111,7 @@ NB: To return only relevant details, I filtered the results on the client side b
 
 - First Used `nmap` utility to check for open port → no ports open.
 
-![nmap-scan-no-open-ports](./assets/nmap.png)
+![nmap-scan-no-open-ports](../assets/images/nmap.png)
 
 - Second Checked security group rules or details with it id → **HTTP (80) not allowed**.
 
@@ -134,8 +129,8 @@ NB: To return only relevant details, I filtered the results on the client side b
     aws ec2 describe-route-tables  --route-table-ids 'rtb-07986fdaac001a165' --filter "Name=association.subnet-id,Values='subnet-0b9b846de14fe48f1'"
   ```
 
-  ![route-tables](./assets/images/describe-route-tables.png)
-  ![route-tables](./assets/images/describe-rt-2.png)
+  ![route-tables](../assets/images/describe-route-tables.png)
+  ![route-tables](../assets/images/describe-rt-2.png)
 
 - Created a new route and configured the internet gateway
 
@@ -144,7 +139,7 @@ NB: To return only relevant details, I filtered the results on the client side b
 ```
 
 - Webpage loaded successfully (`Hello From Your Web Server!`).
-  ![cafe web server](<./assets/images/Screenshot%20(1208).png>)
+  ![cafe web server](<../assets/images/Screenshot%20(1208).png>)
 
 Root cause:
 
@@ -163,7 +158,7 @@ Root cause:
 - Security group allowed port 22, route table was correct.
 - Checked **Network ACL** associated with subnet where it running:
 
-![error establishing ssh connection](./assets/images/issue2.png)
+![error establishing ssh connection](../assets/images/issue2.png)
 
 ```bash
 aws ec2 describe-network-acls --filter "Name=association.subnet-id,Values='subnet-0b9b846de14fe48f1'"
@@ -190,7 +185,7 @@ aws ec2 describe-network-acls --filter "Name=association.subnet-id,Values='subne
 - Cd into the required directory
 
   ```bash
-    cd <AWSLogs/AccountID/vpcflowlogs/us-west-2/yyyy/mm/dd/>
+    cd AWSLogs/AccountID/vpcflowlogs/us-west-2/yyyy/mm/dd/
   ```
 
 - Files are compressed

@@ -1,23 +1,17 @@
-# AWS re/Start Journey 🚀
+# AWS Journey
 
 This repository documents my hands-on labs and learnings from the AWS re/Start program.
-Each week covers new modules, with practical notes, screenshots, and lessons learned.
-
----
+Each week covers new modules, with practical notes, screenshots, and lessons learned as I grow cloud skills.
 
 ## Progress Tracker
 
-- [x] Week 7: Troubleshooting VPC (Flow Logs, SG, NACL)
-
-# 🚀 AWS re/Start Journey
-
-Welcome to my learning repository for the **AWS re/Start Program**.
-This repo captures my **hands-on practice labs, notes, and reflections** as I grow cloud skills.
+- `[VPC Troubleshooting Lab](./docs/lab-troubleshooting.md)`
+- `[Amazon EBS Lab](./docs/ebs-lab.md)`
 
 ## 📂 Repository Structure
 
-- `week-017-networking/` →Troubleshooting VPC (Flow Logs, SG, NACL)
-- `notes/` → Glossary, FAQs
+- `docs/` → Troubleshooting VPC (Flow Logs, SG, NACL)
+- `assets/` → Images, Diagrams
 
 ## 🌟 Goals
 
@@ -28,5 +22,5 @@ This repo captures my **hands-on practice labs, notes, and reflections** as I gr
 
 ## 📖 Follow My Journey
 
-I’ll keep updating this repo as I progress through the program.
+I’ll keep updating this repo as I progress through.
 Stay tuned ✨
