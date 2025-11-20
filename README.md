@@ -7,6 +7,7 @@ Each week covers new modules, with practical notes, screenshots, and lessons lea
 
 - `[VPC Troubleshooting Lab](./docs/lab-troubleshooting.md)`
 - `[Amazon EBS Lab](./docs/ebs-lab.md)`
+- `[VPC Peering Connection](./docs/vpc-peering.md)`
 
 ## 📂 Repository Structure
 
