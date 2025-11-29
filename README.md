@@ -1,10 +1,11 @@
-# AWS Journey
+# AWS Cloud Journey
 
 This repository documents my hands-on labs and learnings from the AWS re/Start program.
 Each week covers new modules, with practical notes, screenshots, and lessons learned as I grow cloud skills.
 
 ## Progress Tracker
 
+- `[Static Website Using Amazon S3](./docs/S3-hosted-staticsite.md)`
 - `[VPC Troubleshooting Lab](./docs/lab-troubleshooting.md)`
 - `[Amazon EBS Lab](./docs/ebs-lab.md)`
 - `[VPC Peering Connection](./docs/vpc-peering.md)`
